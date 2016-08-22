@@ -1,9 +1,13 @@
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ForEach
-
+//Break down forEach into myEach
 function myEach(arr, callback) {
-
-//  CODE INSIDE HERE   //
-
+	//Print to console the function;
+		console.log('myEach');
+	//loop through the array starting at index[0] and iterating through each;
+	for (var i=0; i<arr.length; i++) {
+	//Take the three arguments needed to execute in the function for each element:
+		callback(arr[i], i, arr);
+	}
 }
 
 /*
