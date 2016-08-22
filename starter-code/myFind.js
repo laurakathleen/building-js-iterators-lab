@@ -1,7 +1,14 @@
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Find
 function myFind(arr, callback) {
-
-//  CODE INSIDE HERE   //
+	//loop through each index of the array:
+	for(var i=0; i<arr.length; i++){
+		//if the index with the callback function returns as true for the critera
+		if (callback(arr[i], i, arr)){
+			//return that value arr[i]
+			return arr[i];
+			//otherwise, return as undefined
+		}
+	}
 
 }
 
